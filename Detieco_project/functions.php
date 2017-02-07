@@ -648,7 +648,7 @@ if ( $wpdb->get_var('SELECT count(*) FROM `' . $wpdb->prefix . 'datalist` WHERE 
 
 			acf.add_filter('select2_args', function( args, $select, settings ){
 				var t = settings;
-				args.ajax.data = function(e,i){var a=acf.prepare_for_ajax({action:t.action,field_key:t.key,post_id:acf.get("post_id"),s:e,paged:i,country: $('#acf-field_56a1439ffb50b-input').val(),country_patronaj: $('#acf-field_56b12926486eb-input').val(),country_sanatorii: $('#acf-field_5858eb4da8d9d-input').val()});return a};
+				args.ajax.data = function(e,i){var a=acf.prepare_for_ajax({action:t.action,field_key:t.key,post_id:acf.get("post_id"),s:e,paged:i,country: $('#acf-field_56a1439ffb50b-input').val()});return a};
 				return args;
 			});
 
@@ -696,23 +696,7 @@ if ( $wpdb->get_var('SELECT count(*) FROM `' . $wpdb->prefix . 'datalist` WHERE 
                   'type' => 'NUMERIC'
                   ),
               );
-      } elseif($_POST['field_key'] == 'field_56b1292648ae4') {
-          $args['meta_query'] = array(
-              array(
-                  'key' => 'country',
-                  'value' => $_POST['country_patronaj'],
-                  'type' => 'NUMERIC'
-                  ),
-              );
-      } elseif($_POST['field_key'] == 'field_5858eb4da8e0e') {
-          $args['meta_query'] = array(
-              array(
-                  'key' => 'country',
-                  'value' => $_POST['country_sanatorii'],
-                  'type' => 'NUMERIC'
-                  ),
-              );
-      }
+      } 
       return $args;
       //print_r( $args );
   }
