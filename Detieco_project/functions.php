@@ -742,16 +742,10 @@ if ( $wpdb->get_var('SELECT count(*) FROM `' . $wpdb->prefix . 'datalist` WHERE 
 
       $nextpage = (int) $_POST['nextpage'];
       $cur_id = (int) $_POST['current_id'];
-      $tpl_ids = get_tpl_id('pages/template-patronaj.php');
-      $tpl_id = get_tpl_id('pages/template-sanatorii.php');
       $cur_type = get_post($cur_id);
 
-      if(in_array($cur_id, $tpl_ids) || $cur_type->post_type == 'cities_patronaj' || $cur_type->post_type == 'countries_patronaj') {
-          get_template_part('blocks/patronaj/ajax-loop-catalog');
-      } elseif(in_array($cur_id, $tpl_id) || $cur_type->post_type == 'cities_sanatorii' || $cur_type->post_type == 'countries_sanatorii') {
-          get_template_part('blocks/sanatorii/ajax-loop-catalog');
-      }	else {
-          get_template_part('blocks/pansionats/ajax-loop-catalog');
+      if(in_array($cur_id, $tpl_ids) ) {
+          get_template_part('blocks/kliniki/ajax-loop-catalog');
       }
 
       die();
@@ -762,9 +756,9 @@ if ( $wpdb->get_var('SELECT count(*) FROM `' . $wpdb->prefix . 'datalist` WHERE 
   add_filter( 'wpseo_title', 'custom_titles');
   function custom_titles($title) {
       global $post;
-      if((is_singular('cities_pansionat') || is_singular('cities_patronaj')  || is_singular('cities_sanatorii')) && get_query_var('type_organisation') == 'gos') {
+      if((is_singular('cities_kliniki')) && get_query_var('type_organisation') == 'gos') {
           return get_field('type_gos_title', $post->ID);
-      } elseif((is_singular('cities_pansionat') || is_singular('cities_patronaj')  || is_singular('cities_sanatorii')) && get_query_var('type_organisation') == 'chastnie') {
+      } elseif((is_singular('cities_kliniki')) && get_query_var('type_organisation') == 'chastnie') {
           return get_field('type_chastnie_title', $post->ID);
       } else {
           return $title;
