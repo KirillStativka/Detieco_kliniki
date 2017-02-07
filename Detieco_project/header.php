@@ -5,7 +5,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<?php wp_head(); ?>
-		<link rel="icon" href="http://noalone.ru/favicon.png" type="image/x-icon">
+		<link rel="icon" href="http://test.detieco.ru/favicon.png" type="image/x-icon">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
