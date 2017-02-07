@@ -1,0 +1,100 @@
+@media (min-width: 768px) {
+  .posts-grid {
+    margin-left: -15px;
+	margin-right: -15px;
+  }
+  .posts-grid .col-4,
+  .posts-grid .col-3 {
+  	float: left;
+	padding: 0 15px;
+	width: 50%;
+  }
+  .posts-grid .col-3 {width: 33.33%;}
+  .posts-grid .col-4:nth-child(2n+1) {
+    clear: left;
+  }
+  .posts-grid .col-3:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 992px) {
+  .posts-grid .col-4:nth-child(2n+1) {
+    clear: none;
+  }
+  .posts-grid .col-4:nth-child(4n+1) {
+    clear: left;
+  }
+  .posts-grid .col-4 {
+    width: 25%;
+  }
+}
+
+/* posts-grid */
+.posts-grid {margin-bottom: 30px;}
+.posts-grid:after {
+	content: '';	display: table;	width: 100%;	clear: both;
+}
+.posts-grid .post-block {margin-bottom: 30px;}
+.posts-grid .post-block img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.posts-grid .post-block time {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* posts-list */
+.posts-list {margin-bottom: 30px;}
+.posts-list .list-item {margin-bottom: 30px;}
+.posts-list .list-item:after {
+	content: '';	display: table;	width: 100%;	clear: both;
+}
+.posts-list .thumbnail {
+	float: left;
+	width: 200px;
+	margin: 0 20px 0 0;
+	max-width: 45%;
+}
+.posts-list .thumbnail a {display: block;}
+.posts-list .thumbnail img {width: 100%;}
+.posts-list .post_content {overflow: hidden;}
+.posts-list .post-header {overflow: hidden; margin-bottom: 10px;}
+
+/* banner-wrap */
+.banner-wrap {margin-bottom: 30px;}
+.banner-wrap .featured-thumbnail {
+  margin-bottom: 15px;
+}
+.banner-wrap .featured-thumbnail a {display: block;}
+.banner-wrap .featured-thumbnail img {width: 100%;}
+
+/* recent-comments */
+.recent-comments {
+  margin-bottom: 30px;
+}
+.recent-comments > li {
+  margin-bottom: 15px;
+}
+
+/* service-box */
+.service-box {margin-bottom: 30px;}
+.service-box .icon {
+  margin-bottom: 15px;
+}
+
+/* Categories */
+.check-list {margin-bottom: 30px;}
+
+/* tags-cloud */
+.tags-cloud {margin-bottom: 30px;}
+
+/* title-box */
+.title-box {margin-bottom: 30px;}
+
+/* site_map */
+.site_map {margin-bottom: 30px;}
+
+/* widget */
+.widget {margin-bottom: 30px;}
