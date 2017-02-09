@@ -71,16 +71,7 @@ if($wp_query->have_posts()): ?>
 <?php endif; ?>
 <div class="houses">
     <div class="houses-wrap">
-        <div class="houses-content">
-            <?php
-    if( $_SERVER['REQUEST_URI'] == '/pansionaty/russia/samara/' ){
-        do_shortcode("[rBlock name=samara]");
-    } 
-            ?>
-            <?php
-          if( $_SERVER['REQUEST_URI'] == '/pansionaty/russia/moskva/' ){
-        do_shortcode("[rBlock name=moskva]");
-        ?>
+        <div class="houses-content">            
             <?php $i = 0; while($wp_query->have_posts()):
                       $wp_query->the_post(); ?>
             <?php

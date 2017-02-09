@@ -104,7 +104,6 @@ if ( $wpdb->get_var('SELECT count(*) FROM `' . $wpdb->prefix . 'datalist` WHERE 
 
   include( TEMPLATE_DIRECTORY . '/inc/classes.php' );
   include( TEMPLATE_DIRECTORY . '/inc/widgets.php' );
-  include( TEMPLATE_DIRECTORY . '/inc/widget.php' );
   include( TEMPLATE_DIRECTORY . '/inc/post-types.php' );
   include( TEMPLATE_DIRECTORY . '/inc/remove-category-url.php' );
   include( TEMPLATE_DIRECTORY . '/inc/wp_bootstrap_pagination.php' );
