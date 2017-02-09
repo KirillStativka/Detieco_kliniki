@@ -12,7 +12,7 @@ get_header(); ?>
 
                         <?php get_template_part('blocks/kliniki/filter-form'); ?>
 <!-- Yandex.RTB R-A-185002-2 -->
-<div id="yandex_rtb_R-A-185002-2"></div>
+<!--<div id="yandex_rtb_R-A-185002-2"></div>
 <script type="text/javascript">
     (function(w, d, n, s, t) {
         w[n] = w[n] || [];
@@ -30,7 +30,7 @@ get_header(); ?>
         s.async = true;
         t.parentNode.insertBefore(s, t);
     })(this, this.document, "yandexContextAsyncCallbacks");
-</script>
+</script>-->
                         <?php get_template_part('blocks/kliniki/loop-catalog'); ?>
 
                         <div class="home-text text">
