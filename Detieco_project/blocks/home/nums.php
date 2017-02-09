@@ -1,7 +1,6 @@
 ﻿<?php
-$count1 = new WP_Query( array('post_type' => 'cities_pansionat', 'post_status' => 'publish') );
-$count2 = new WP_Query( array('post_type' => 'pansionat', 'post_status' => 'publish') );
-$count3 = new WP_Query( array('post_type' => 'patronaj', 'post_status' => 'publish') );
+$count1 = new WP_Query( array('post_type' => 'cities_kliniki', 'post_status' => 'publish') );
+$count2 = new WP_Query( array('post_type' => 'kliniki', 'post_status' => 'publish') );
 ?>
 <div class="nums-wrap">
     <ul class="nums">

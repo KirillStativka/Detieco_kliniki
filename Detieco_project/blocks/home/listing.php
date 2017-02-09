@@ -1,7 +1,7 @@
 <div class="alphabet">
     <?php
     $args = array(
-        'post_type' => 'cities_pansionat',
+        'post_type' => 'cities_kliniki',
         'posts_per_page' => -1,
         'orderby' => 'title',
         'order' => 'ASC',
